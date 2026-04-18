@@ -1,0 +1,12 @@
+{
+  "domain": "nodeghost",
+  "name": "NodeGhost",
+  "version": "0.1.0",
+  "documentation": "https://github.com/Monitee/ha-nodeghost",
+  "issue_tracker": "https://github.com/Monitee/ha-nodeghost/issues",
+  "dependencies": [],
+  "codeowners": ["@Monitee"],
+  "requirements": [],
+  "iot_class": "cloud_polling",
+  "config_flow": true
+}

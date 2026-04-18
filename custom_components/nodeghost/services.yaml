@@ -1,0 +1,39 @@
+remember:
+  name: Remember
+  description: Store a memory in NodeGhost for future AI context.
+  fields:
+    text:
+      name: Text
+      description: The information to remember (e.g. "Living room light turned on at 9pm")
+      required: true
+      example: "Jaren arrived home at 6:15pm"
+      selector:
+        text:
+    namespace:
+      name: Namespace
+      description: Memory namespace (default or knowledge-base)
+      required: false
+      default: default
+      example: default
+      selector:
+        text:
+
+recall:
+  name: Recall
+  description: Recall relevant memories from NodeGhost based on a query.
+  fields:
+    query:
+      name: Query
+      description: What to search for in memory
+      required: true
+      example: "what time does Jaren usually arrive home"
+      selector:
+        text:
+    namespace:
+      name: Namespace
+      description: Memory namespace to search
+      required: false
+      default: default
+      example: default
+      selector:
+        text:
